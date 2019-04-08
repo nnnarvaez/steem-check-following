@@ -5,7 +5,7 @@ from datetime import datetime
 from steem import Steem
 import time
 from steem.account import Account
-stm = Steem(keys = "5JCdh64qWj9ebsYGmnEdDWGjjrLw9LFXu3PjWxteRE9mjQ94w4G") #reveur posting STEEMit
+stm = Steem(keys = "") # posting STEEMit
 #stm = Steem(keys = "---posting_key---") # nnnarvaez posting
 
 account_to_check ='crypto.piotr'
