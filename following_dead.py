@@ -1,14 +1,11 @@
-#crypto.piotr
 
-#import datetime
 from datetime import datetime
 from steem import Steem
 import time
 from steem.account import Account
-stm = Steem(keys = "") # posting STEEMit
-#stm = Steem(keys = "---posting_key---") # nnnarvaez posting
+stm = Steem(keys = "---posting_key---") #  posting STEEMit
 
-account_to_check ='crypto.piotr'
+account_to_check ='name-of-the-account-whose-followers-will-be-evaluated'
 
 muted_me = stm.steemd.get_followers(account_to_check,start_follower='', follow_type='ignore' ,limit=1000)
 
