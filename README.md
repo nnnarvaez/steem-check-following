@@ -39,28 +39,7 @@ Next steps maybe integrate into a discord bot to make it available for the non p
 
 * It is nicely inline commented so you know what each stage of the code and the different loops do.
 
-* It throttles down initial node requests and then saves a local JSON file to work locally and avoid punching the nodes.
-
-![](https://cdn.steemitimages.com/DQmT8dUT8mejtuF4mAqPLBL8aqHnufYERVGWySVsoTQf1cw/image.png)
-
 ```
-    # Let's get the user SP to see if he has not taken it all out
-    # That is a good indicator he left
-    
-    followed_vs = float(str.split(u_r_following[followed]['vesting_shares'])[0])
-    vestSteem = tvfs / tvs
-    followed_sp = followed_vs * vestSteem      
-    if delta_post > 10000:
-        i = i + 1 # Increase the counter    
-        print('{:003} | {:16}|{:8.02f}SP | never posted ( High SP = vote BOT or a Curator | Low SP = likely a fake account'.format(i,followed,followed_sp))    
-    # Let's check for accounts that have gone dormant in the last X days 
-    # (change l_c & l_v to fine tune)
-    # Maybe a run of dormant during 60 days will give you a good indicator 
-    # The user has left for good the platform.
-    if delta_vote > l_v and l_c < delta_post < 10000: # looks dead to me
-        i = i + 1 # Increase the counter
-        print('{:003} | {:16}|{:8.02f} SP | posted {:6} days ago, last voted: {:6} days ago (LOOKS Dead)'.format(i,followed, followed_sp, delta_post,delta_vote))
-
     # Let's check for curators that never post but vote 
     # (sometimes these are fake accounts created to make small vote rings)
     # A good indicator this is a fake account would be that it is old and has almost no SP
@@ -68,3 +47,10 @@ Next steps maybe integrate into a discord bot to make it available for the non p
             print('{:003} | {:16}|{:8.02f}SP | never posted ( High SP = vote BOT or a Curator | Low SP = likely a fake account'.format(followed,followed_sp))
 
 ```
+
+
+* It throttles down initial node requests and then saves a local JSON file to work locally and avoid punching the nodes.
+
+![](https://cdn.steemitimages.com/DQmT8dUT8mejtuF4mAqPLBL8aqHnufYERVGWySVsoTQf1cw/image.png)
+
+
