@@ -1,15 +1,9 @@
-<center>https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmPmrdb6VUyh51zXCrJJMXzoAx9mL28uz8UkXdL1JftTuW/image.png</center>
-
-<center>Advertisement.</center>
-
-<center>![](https://cdn.steemitimages.com/DQmVBWU7UE5AP4yvVnnpDGgj8MubPCcVDdgvCm2opBV3szK/image.png)</center>
+![](https://cdn.steemitimages.com/DQmVBWU7UE5AP4yvVnnpDGgj8MubPCcVDdgvCm2opBV3szK/image.png)
 
 # Project Information
 
 A python snippet to check the list of the people you are following optimized to reduce requests on the API nodes.
 
-
-* Repository:  https://github.com/nnnarvaez/steem-check-following
 * Project Name: Check your followee base
 
 ### More detail in [This Post](https://steemit.com/steem/@nnnarvaez/do-you-lost-control-of-your-feed)
@@ -47,7 +41,7 @@ Next steps maybe integrate into a discord bot to make it available for the non p
 
 * It throttles down initial node requests and then saves a local JSON file to work locally and avoid punching the nodes.
 
-<center>![](https://cdn.steemitimages.com/DQmT8dUT8mejtuF4mAqPLBL8aqHnufYERVGWySVsoTQf1cw/image.png)</center>
+![](https://cdn.steemitimages.com/DQmT8dUT8mejtuF4mAqPLBL8aqHnufYERVGWySVsoTQf1cw/image.png)
 
 ```
     # Let's get the user SP to see if he has not taken it all out
@@ -74,6 +68,3 @@ Next steps maybe integrate into a discord bot to make it available for the non p
             print('{:003} | {:16}|{:8.02f}SP | never posted ( High SP = vote BOT or a Curator | Low SP = likely a fake account'.format(followed,followed_sp))
 
 ```
-
-#### GitHub Account
-https://github.com/nnnarvaez
